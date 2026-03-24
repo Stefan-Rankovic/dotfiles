@@ -24,7 +24,7 @@ for path contents in "${(@kv)files}"; do
 		print -r -- "$contents" > "$path"
 		print -P "%B%F{green}$path has been filled%f%b"
 	else
-		print -P "%B%F{red}$path is not empty%f%b"
+		print -P "%B%F{yellow}$path is not empty%f%b"
 	fi
 done
 

@@ -14,7 +14,7 @@ FILES=(
 
 for file in "${FILES[@]}"; do
 	if [[ -f "$file" ]]; then
-		print -P "%B%F{red}$file already exists%f%b"
+		print -P "%B%F{yellow}$file already exists%f%b"
 	else
 		touch "$DOTFILES_DIR/$file"
 		print -P "%B%F{green}$file has been created%f%b"
