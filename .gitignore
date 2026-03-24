@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-3.0-only
+
+config/.config/hypr/hyprpaper.conf
+config/.config/hypr/startup.conf
+
+config/.config/nvim/lazy-lock.json
+config/.config/nvim/.neoconf.json
+
+config/.config/zsh/.zcompdump*
+config/.config/zsh/.zsh_history
+config/.config/zsh/.zshenv
+
