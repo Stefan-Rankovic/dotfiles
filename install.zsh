@@ -1,7 +1,7 @@
 #!/bin/env zsh
 # SPDX-License-Identifier: GPL-3.0-only
 
-./deps.sh
+./deps.zsh
 
 RESET="\e[0m"
 BLUE="\e[34m"

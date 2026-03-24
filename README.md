@@ -5,7 +5,12 @@ Configuration for [Arch Linux](https://archlinux.org/).
 
 
 ## Prerequisites
-Programs (to install these, run `deps.sh`, but `install.zsh` does this automatically):
+To install these, run `deps.zsh`.
+
+> [!NOTE]
+> `install.zsh` automatically installs them.
+
+Programs:
 - [Zsh](https://www.zsh.org/)[^1] - Shell.
 - [Kitty](https://sw.kovidgoyal.net/kitty/) - Terminal.
 - [Hyprland](https://hypr.land/) - Window manager.
@@ -21,7 +26,7 @@ Install dependencies:
 - [Git](https://git-scm.com/) [^2]
 - [Stow](https://www.gnu.org/software/stow/)
 
-[^1]: You need to download Zsh manually in order to run scripts. Alternatively, you could run `deps.sh` which will, along with other things, download Zsh.
+[^1]: You need to download Zsh manually in order to run scripts in this repository.
 [^2]: You need to download Git manually in order to clone this repository.
 
 
