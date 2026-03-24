@@ -8,12 +8,12 @@ typeset -A files
 
 
 
-files["$DOTFILES_DIR/config/.config/hypr/hyprpaper.conf"]="$(cat $DOTFILES_DIR/default_file_contents/config_config_hypr_hyprpaper.conf)"
+files[$DOTFILES_DIR/config/.config/hypr/hyprpaper.conf]="$(cat $DOTFILES_DIR/default_file_contents/config_config_hypr_hyprpaper.conf)"
 
-files["$DOTFILES_DIR/config/.config/hypr/startup.conf"]="$(cat $DOTFILES_DIR/default_file_contents/config_config_hypr_startup.conf)"
+files[$DOTFILES_DIR/config/.config/hypr/startup.conf]="$(cat $DOTFILES_DIR/default_file_contents/config_config_hypr_startup.conf)"
 
 
-files["$DOTFILES_DIR/config/.config/zsh/.zshenv"]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_.zshenv)"
+files[$DOTFILES_DIR/config/.config/zsh/.zshenv]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_.zshenv)"
 
 
 
