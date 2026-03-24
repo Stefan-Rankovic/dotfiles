@@ -31,6 +31,6 @@ echo "Creating other files..."
 ./create_other_files.zsh
 echo "Done."
 
-echo "Filling other files with default content (you may want to modify these files further)..."
+echo "Filling other files with default content (you may want to further modify these files)..."
 ./fill_other_files.zsh
 echo "Done."
