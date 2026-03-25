@@ -6,6 +6,7 @@
 -- https://github.com/uZer/pywal16.nvim
 
 return {
+	enabled = false,
 	"uZer/pywal16.nvim",
 	config = function()
 		vim.cmd.colorscheme("pywal16")

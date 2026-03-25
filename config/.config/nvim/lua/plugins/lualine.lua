@@ -11,9 +11,9 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				-- originally palenight
 				-- nightfly is an alternative, but it's gray INSERT color is ugly
-				theme = "pywal16-nvim",
+				theme = "palenight",
+				-- theme = "pywal16-nvim",
 			},
 		})
 	end,
