@@ -11,13 +11,16 @@ PROGRAMS=(
 	"zsh"
 	"kitty"
 	"hyprland"
-	"hyprpaper"
 	"hyprpicker"
 	"hyprlock"
 	"snappy-switcher"
 	"btop"
+	"rofi"
 	"rofimoji"
 	"swaync"
+	"python-pywal16"
+	"yazi"
+	"awww"
 
 	"stow"
 )

@@ -8,26 +8,30 @@ Configuration for [Arch Linux](https://archlinux.org/).
 To install these, run `deps.zsh`.
 
 > [!NOTE]
-> `install.zsh` automatically installs them.
+> `install.zsh` automatically installs everything[^1][^3] here.
 
 Programs:
 - [Zsh](https://www.zsh.org/)[^1] - Shell.
 - [Kitty](https://sw.kovidgoyal.net/kitty/) - Terminal.
 - [Hyprland](https://hypr.land/) - Window manager.
-- [Hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper/) - Wallpaper setter.
 - [Hyprpicker](https://wiki.hypr.land/Hypr-Ecosystem/hyprpicker/) - Used to get information about a color that is on screen.
 - [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/) - Session lock manager.
 - [Snappy switcher](https://github.com/OpalAayan/snappy-switcher)<sup>[AUR]</sup> - Alt+Tab window switcher.
 - [btop](https://github.com/aristocratos/btop) - Resource and task manager.
+- [Rofi](https://github.com/davatorium/rofi) - Selection menu. Required for `rofimoji`, but also as a clipboard selector (it can do way more too).
 - [Rofimoji](https://github.com/fdw/rofimoji) - Emoji selector.
 - [Swaync](https://github.com/ErikReider/SwayNotificationCenter) - Notification center.
+- [Pywal16](https://github.com/eylles/pywal16)<sup>[AUR]</sup> - Theme tool that provides colors based on a passed image.
+- [Yazi](https://github.com/sxyazi/yazi) - File browser.
+- [Awww](https://codeberg.org/LGFae/awww)<sup>[AUR]</sup> - Wallpaper setter.[^2]
 
 Install dependencies:
-- [Git](https://git-scm.com/) [^2]
+- [Git](https://git-scm.com/)[^3]
 - [Stow](https://www.gnu.org/software/stow/)
 
 [^1]: You need to download Zsh manually in order to run scripts in this repository.
-[^2]: You need to download Git manually in order to clone this repository.
+[^2]: `hyprpaper` is an alternative, but it is not dynamic. Meaning you have to log out to change your wallpaper. If you for some reason want it, a config for it is bundled in this repository. If you want to delete it, it's located at ~/.config/hypr/hyprpaper.conf.
+[^3]: You need to download Git manually in order to clone this repository.
 
 
 ## Installation

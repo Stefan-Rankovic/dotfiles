@@ -35,3 +35,5 @@ echo "Filling other files with default content (you may want to further modify t
 ./fill_other_files.zsh
 echo "Done."
 
+print -P "%B%F{red}This configuration will not be complete until you run wal. Run it as soon as possible. You could also use the keybind Super+Alt+W in order to run this configuration's wallpaper switcher which will internally run wal. When you do that, please run post_wal.zsh.%f%b"
+
