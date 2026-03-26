@@ -34,3 +34,4 @@ echo "Done."
 echo "Filling other files with default content (you may want to further modify these files)..."
 ./fill_other_files.zsh
 echo "Done."
+

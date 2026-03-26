@@ -21,7 +21,10 @@ wal() {
 
 	case "$wallpaper" in
 		"hoshino_ai.png")
-			jq '.colors.color2 = "#ff7f00"' "$json_location" | sponge "$json_location"
+			jq '.colors.color3 = "#9c4d08"' "$json_location" | sponge "$json_location" # Was #4A51A3
+			jq '.colors.color11 = "#ff7f00"' "$json_location" | sponge "$json_location" # Was #4A51A3
+			jq '.colors.color14 = "#78ffd9"' "$json_location" | sponge "$json_location" # Was #6FD7C3
+			jq '.colors.color4 = "#4a51a3"' "$json_location" | sponge "$json_location" # Was #B53FB9
 			;;
 		*)
 			return 0
