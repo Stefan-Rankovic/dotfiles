@@ -8,15 +8,27 @@ if [[ ! -f "$WAL_LOCATION/colors" ]]; then
     exit 1
 fi
 
-echo "Linking wal colors..."
+
+
+echo "Symlinking wal colors..."
+symlinked_some_wal_colors=0
+
 WAYBAR_CSS="$HOME/.config/waybar/colors-waybar.css"
 if [[ -L "$WAYBAR_CSS" ]]; then
-    print -P "%B%F{yellow}[SKIPPING]%f colors-waybar.css symlink already exists.%b"
+	print -P "%B%F{yellow}[SKIPPING]%f colors-waybar.css (already exists as symlink)%b"
 elif [[ -f "$WAYBAR_CSS" ]]; then
-    print -P "%B%F{yellow}[ERROR]%f $WAYBAR_CSS already exists as a regular file. Please remove it.%b"
+	print -P "%B%F{red}[ERROR]%f colors-waybar.css (already exists as file; please remove it)%b"
 else
     ln -s "$WAL_LOCATION/colors-waybar.css" "$HOME/.config/waybar/colors-waybar.css"
-    print -P "%B%F{green}[DONE]%f Symlink created.%b"
+    print -P "%B%F{green}[SYMLINKED]%f colors-waybar.css.%b"
+	symlinked_some_wal_colors=1
 fi
-echo "Done."
+
+if [[ $symlinked_some_wal_colors == 1 ]]; then
+	print -P "%B%F{cyan}[DONE]%f%b"
+else
+	print -P "%B%F{cyan}[DONE]%f (did nothing)%b"
+fi
+
+
 

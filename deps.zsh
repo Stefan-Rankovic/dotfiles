@@ -37,11 +37,11 @@ done
 
 if (( ${#TO_INSTALL[@]} > 0 )); then
 	if ! "$INSTALLER" -S "${TO_INSTALL[@]}"; then
-		print -P "%B%F{red}[ERROR]%f Installation failed!%b"
+		print -P "%B%F{red}[ERROR]%f Installation failed!%b\n"
 		exit 1
 	fi
-    print -P "%B%F{cyan}[DONE]%f Installation finished!%b"
+    print -P "%B%F{cyan}[DONE]%f%b\n"
 else
-    print -P "%B%F{cyan}[DONE]%f Nothing to install!%b"
+	print -P "%B%F{cyan}[DONE]%f (did nothing)%b\n"
 fi
 
