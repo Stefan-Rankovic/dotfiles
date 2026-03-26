@@ -17,7 +17,7 @@ Programs:
 - [Hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper/) - Wallpaper setter.
 - [Hyprpicker](https://wiki.hypr.land/Hypr-Ecosystem/hyprpicker/) - Used to get information about a color that is on screen.
 - [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/) - Session lock manager.
-- [Snappy switcher](https://github.com/OpalAayan/snappy-switcher) - Alt+Tab window switcher.
+- [Snappy switcher](https://github.com/OpalAayan/snappy-switcher)<sup>[AUR]</sup> - Alt+Tab window switcher.
 - [btop](https://github.com/aristocratos/btop) - Resource and task manager.
 - [Rofimoji](https://github.com/fdw/rofimoji) - Emoji selector.
 - [Swaync](https://github.com/ErikReider/SwayNotificationCenter) - Notification center.
