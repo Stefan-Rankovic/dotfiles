@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: GPL-3.0-only
+
+{
+	"clock": {
+		"interval": 1,
+		"format": "󰃭 {:%d.%m.%Y %H:%M:%S}",
+		"format-alt": "󰃭 {:%d.%m.%Y %H:%M}"
+		// "tooltip-format": "<tt><big>{calendar}</big></tt>",
+		// "calendar": {
+		// 	"mode": "month",
+		// 	"mode-mon-col": 3
+		// },
+		// "actions": {
+			// "on-click-right": "mode", // switch between month and months
+			// "on-scroll-up": "shift_up", // scroll to browse months/years
+			// "on-scroll-down": "shift_down" // scroll to browse months/years
+		// }
+	}
+}

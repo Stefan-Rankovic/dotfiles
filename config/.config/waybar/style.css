@@ -1,0 +1,130 @@
+/* SPDX-License-Identifier: GPL-3.0-only */
+
+@import "./colors-waybar.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 20px;
+}
+window#waybar {
+    background: transparent;
+	/* min-height: 315px; */
+}
+.modules-left,
+.modules-center,
+.modules-right {
+    background: alpha(@background, 0.65);
+    border-radius: 14px; /* round borders */
+    padding: 4px 4px;
+    margin: 6px 6px; /* distance from screen edges */
+}
+#submap,
+#pulseaudio,
+#workspaces,
+#privacy,
+#tray,
+#custom-notification,
+#clock {
+    padding: 0px 10px;
+    border-radius: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hyprland Submap */
+#submap {
+	background: alpha(@color14, 0.15); /* Bright Cyan */
+	color: @color6; /* Cyan */
+    font-weight: bold;
+    border: 1px solid alpha(@color14, 0.25); /* Bright Cyan */
+}
+#submap:not(.normal) {
+    background: alpha(@color3, 0.2); /* Yellow */
+    color: @color11; /* Bright Yellow */
+    border: 1px solid alpha(@color3, 0.3); /* Yellow */
+}
+
+#pulseaudio {
+	color: @color5; /* Magenta */
+}
+
+/* Hyprland Workspaces */
+#workspaces button {
+    padding: 0px 6px;
+    border-radius: 10px;
+    color: alpha(@foreground, 0.5);
+    min-width: 24px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+#workspaces button:hover {
+    background: alpha(@foreground, 0.1);
+    color: @foreground;
+}
+#workspaces button.active {
+    background: alpha(@color6, 0.25); /* Cyan */
+    color: @color14; /* Bright Cyan */
+    font-weight: 900;
+}
+#workspaces button.urgent {
+    background: alpha(@color1, 0.25); /* Red */
+    color: @color9; /* Bright Red */
+}
+
+/* Privacy */
+#privacy {
+    padding: 4px 8px;
+}
+#privacy-item.screenshare {
+    color: @color3; /* Yellow */
+}
+#privacy-item.audio-in {
+    color: @color3; /* Yellow */
+}
+#privacy-item.audio-out {
+    color: @color3; /* Yellow */
+}
+
+#tray {
+    padding: 4px 6px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: alpha(@color1, 0.2); /* Red */
+    border-radius: 8px;
+}
+
+#custom-notification {
+    color: @color2; /* Green */
+	font-size: 20px;
+}
+#custom-notification.unread {
+    color: @color3; /* Yellow */
+}
+
+/* Clock and Date */
+#clock {
+     color: @color6; /* Cyan */
+	 font-weight: bold;
+	 font-style: italic;
+}
+
+#pulseaudio:hover,
+#custom-notification:hover,
+#clock:hover {
+    background: alpha(@foreground, 0.07);
+    color: @color15; /* Bright White */
+}
+
+tooltip {
+    background: alpha(@background, 0.9);
+    border: 1px solid alpha(@foreground, 0.1);
+    border-radius: 10px;
+    color: @foreground;
+}
+tooltip label {
+    padding: 2px 4px;
+}

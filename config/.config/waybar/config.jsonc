@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-3.0-only
+
+{
+	"layer": "bottom",
+	"position": "top",
+	"reload_style_on_change": true,
+	"include": ["$XDG_CONFIG_HOME/waybar/modules/*json*"],
+	"modules-left": [
+		"hyprland/submap",
+		"pulseaudio",
+		"pulseaudio#microphone"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"privacy",
+		"tray",
+		"custom/notification",
+		"clock"
+	]
+}

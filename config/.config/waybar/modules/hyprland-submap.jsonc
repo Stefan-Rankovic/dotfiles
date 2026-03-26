@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: GPL-3.0-only
+
+{
+	"hyprland/submap": {
+		"format": "{}",
+		"default-submap": "normal",
+		"always-on": true,
+		"tooltip": false
+	}
+}
