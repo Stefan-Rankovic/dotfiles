@@ -4,3 +4,4 @@
 for f in "$ZDOTDIR"/aliases/directories/*.zsh; do
 	source "$f"
 done
+
