@@ -21,6 +21,8 @@ PROGRAMS=(
 	"python-pywal16"
 	"yazi"
 	"awww"
+	"grim"
+	"normcap"
 
 	"stow"
 )

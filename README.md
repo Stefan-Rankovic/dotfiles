@@ -8,7 +8,7 @@ Configuration for [Arch Linux](https://archlinux.org/).
 To install these, run `deps.zsh`.
 
 > [!NOTE]
-> `install.zsh` automatically installs everything[^1][^3] here.
+> `install.zsh` automatically installs everything[^1][^4] here.
 
 Programs:
 - [Zsh](https://www.zsh.org/)[^1] - Shell.
@@ -24,14 +24,16 @@ Programs:
 - [Pywal16](https://github.com/eylles/pywal16)<sup>[AUR]</sup> - Theme tool that provides colors based on a passed image.
 - [Yazi](https://github.com/sxyazi/yazi) - File browser.
 - [Awww](https://codeberg.org/LGFae/awww)<sup>[AUR]</sup> - Wallpaper setter.[^2]
+- [Normcap](https://github.com/dynobo/normcap)<sup>[AUR]</sup> - Copies text from a selected area on screen.[^3]
 
 Install dependencies:
-- [Git](https://git-scm.com/)[^3]
+- [Git](https://git-scm.com/)[^4]
 - [Stow](https://www.gnu.org/software/stow/)
 
 [^1]: You need to download Zsh manually in order to run scripts in this repository.
-[^2]: `hyprpaper` is an alternative, but it is not dynamic. Meaning you have to log out to change your wallpaper. If you for some reason want it, a config for it is bundled in this repository. If you want to delete it, it's located at ~/.config/hypr/hyprpaper.conf.
-[^3]: You need to download Git manually in order to clone this repository.
+[^2]: `hyprpaper` is an alternative, but it is not dynamic. Meaning you have to log out to change your wallpaper. If you for some reason want it, a config for it is bundled in this repository. If you want to delete that config, it's located at ~/.config/hypr/hyprpaper.conf.
+[^3]: It also pulls [Grim](https://gitlab.freedesktop.org/emersion/grim) as a dependency. It is not marked as a dependency on the AUR, yet (on my machine) Normcap doesn't work without it. Screenshot permission issues. Grim is only 45 KiB anyway. But I think that technically you don't need it.
+[^4]: You need to download Git manually in order to clone this repository.
 
 
 ## Installation
