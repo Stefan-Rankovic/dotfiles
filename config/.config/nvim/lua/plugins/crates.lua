@@ -10,9 +10,6 @@ return {
 	config = function()
 		require("crates").setup({
 			completion = {
-				cmp = {
-					enabled = true,
-				},
 				crates = {
 					enabled = true,
 					max_results = 8,
@@ -21,6 +18,7 @@ return {
 			},
 			lsp = {
 				enabled = true,
+				completion = true,
 			},
 		})
 	end,
