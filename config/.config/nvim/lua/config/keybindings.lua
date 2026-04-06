@@ -42,6 +42,12 @@ vim.keymap.set("n", "<Plug>(format_current_buffer)", function()
 	require("conform").format({ async = true })
 end)
 
+-- LSP
+vim.keymap.set("n", "<Plug>(restart_lsp)", "<cmd>LspRestart<cr>")
+
+-- Other
+vim.keymap.set("n", "<Plug>(reload_nvim)", "<Plug>(restart_lsp)")
+
 --
 
 -- Keybinds
@@ -81,3 +87,9 @@ vim.keymap.set("n", "<leader>tf", "<Plug>(focus_neotree)", { desc = "Show and se
 -- Formatting
 vim.keymap.set("n", "<leader>f", "", { desc = "Formatting" })
 vim.keymap.set("n", "<leader>ff", "<Plug>(format_current_buffer)", { desc = "Format current buffer" })
+vim.keymap.set("n", "<leader>fb", "<Plug>(format_current_buffer)", { desc = "Format current buffer" })
+
+-- Other
+vim.keymap.set("n", "<leader>r", "", { desc = "Reloading" })
+vim.keymap.set("n", "<leader>rl", "<Plug>(restart_lsp)", { desc = "Restart LSP" })
+vim.keymap.set("n", "<leader>rr", "<Plug>(reload_nvim)", { desc = "Reload everything" })
