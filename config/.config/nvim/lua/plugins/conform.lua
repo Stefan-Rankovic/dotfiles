@@ -5,12 +5,17 @@ return {
 	event = { "BufWritePre" },
 	cmd = { "ConformInfo" },
 	opts = {
-		-- Define your formatters
+		formatters = {
+			sort_derives = {
+				command = "cargo",
+				args = { "sort-derives", "--path", "$FILENAME" },
+				stdin = false, -- it writes to the file directly
+			},
+		},
 		formatters_by_ft = {
 			lua = { "stylua" },
-			rust = { "rustfmt" },
+			rust = { "rustfmt", "sort_derives" },
 		},
-		-- Set default options
 		default_format_opts = {
 			lsp_format = "fallback",
 		},
