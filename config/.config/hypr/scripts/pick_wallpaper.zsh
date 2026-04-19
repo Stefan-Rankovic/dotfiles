@@ -8,7 +8,7 @@ SCRIPTS_DIR="${0:A:h}"
 
 selected=$(yazi --chooser-file=/dev/stdout "$WALLPAPERS_DIR")
 
-echo "$selected"
+echo "Selected $selected"
 
 # Nothing selected -> exit silently
 if [[ -z "$selected" ]]; then

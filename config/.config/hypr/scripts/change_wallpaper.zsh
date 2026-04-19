@@ -50,9 +50,10 @@ fi
 # splash = false
 # EOF
 
+echo "Changing wallpaper"
 awww img "$IMG_PATH"
 
-echo $ZDOTDIR
+echo "Sourcing wal function from $ZDOTDIR/functions/wal.zsh"
 source "$ZDOTDIR/functions/wal.zsh"
 wal -n -i "$IMG_PATH"
 
