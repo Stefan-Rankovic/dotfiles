@@ -43,7 +43,7 @@ vim.keymap.set("n", "<Plug>(format_current_buffer)", function()
 end)
 
 -- Reload
-vim.keymap.set("n", "<Plug>(restart_lsp)", "<cmd>LspRestart<cr>") -- LSP
+vim.keymap.set("n", "<Plug>(restart_lsp)", "<cmd>lsp restart<cr>") -- LSP
 vim.keymap.set("n", "<Plug>(reload_cmp)", function()
 	require("cmp").setup()
 end) -- Completion
@@ -93,12 +93,7 @@ vim.keymap.set("n", "<leader>fb", "<Plug>(format_current_buffer)", { desc = "For
 -- Other
 vim.keymap.set("n", "<leader>r", "", { desc = "Reloading" })
 vim.keymap.set("n", "<leader>rl", "<Plug>(restart_lsp)", { desc = "Restart LSP" })
-vim.keymap.set(
-	"n",
-	"<leader>rc",
-	"<Plug>(reload_cmp)",
-	{
-		desc = 'Reload the "cmp" module (for suggestions/autocompletion). Run this when colorful-menu and which-key stop appearing.',
-	}
-)
+vim.keymap.set("n", "<leader>rc", "<Plug>(reload_cmp)", {
+	desc = 'Reload the "cmp" module (for suggestions/autocompletion). Run this when colorful-menu and which-key stop appearing.',
+})
 vim.keymap.set("n", "<leader>rr", "<Plug>(reload_nvim)", { desc = "Reload everything" })
