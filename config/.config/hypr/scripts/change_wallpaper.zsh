@@ -36,22 +36,24 @@ else
     IMG_PATH="${matches[1]}"
 fi
 
-# cat > "$HYPRPAPER_CONF" <<EOF
-# # SPDX-License-Identifier: GPL-3.0-only
-# # NOTE: This file is automatically managed by \`scripts/change_wallpaper.zsh\`! Please use that to change your wallpaper.
-#
-# preload = $IMG_PATH
-#
-# wallpaper {
-# 	monitor =
-# 	path = $IMG_PATH
-# }
-#
-# splash = false
-# EOF
-
 echo "Changing wallpaper"
-awww img "$IMG_PATH"
+if command -v awww &>/dev/null; then
+	awww img "$IMG_PATH"
+elif command -v hyprpaper &>/dev/null; then
+	cat > "$HYPRPAPER_CONF" <<EOF
+# SPDX-License-Identifier: GPL-3.0-only
+# NOTE: This file is automatically managed by \`scripts/change_wallpaper.zsh\`! Please use that to change your wallpaper.
+
+preload = $IMG_PATH
+
+wallpaper {
+	monitor =
+	path = $IMG_PATH
+}
+
+splash = false
+EOF
+fi
 
 echo "Sourcing wal function from $ZDOTDIR/functions/wal.zsh"
 source "$ZDOTDIR/functions/wal.zsh"
