@@ -72,4 +72,5 @@ Add to ~/.config/zsh/aliases/, ~/.config/zsh/functions, ~/.config/zsh/addons/zin
 ## Todo
 - Add deletion script.
 - Add rofi.
+- Split zshenv into a personal and repo component.
 
