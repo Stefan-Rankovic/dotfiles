@@ -11,12 +11,13 @@ return {
 			cmd = { "pyright-langserver", "--stdio" },
 			filetypes = { "python" },
 		}
+		vim.lsp.enable("pyright")
+
 		vim.lsp.config.lua_ls = {
 			cmd = { "lua-language-server" },
 			filetypes = { "lua" },
 			settings = { Lua = { diagnostics = { globals = { "vim" } } } },
 		}
-		vim.lsp.enable("pyright")
 		vim.lsp.enable("lua_ls")
 
 		-- Rustaceanvim already takes care of this
