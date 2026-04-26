@@ -11,6 +11,7 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	opts = {
+		completions = { lsp = { enabled = true } },
 		latex = { enabled = false },
 	},
 }
