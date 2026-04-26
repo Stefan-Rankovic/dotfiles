@@ -1,7 +1,8 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
-# [P]ackage [U]pdate
-pu() {
+# [S]ystem [UP]date
+# Note: it's `sup` instead of `su` because `su` is taken
+sup() {
 
 	echo "---------- Programs ----------"
 
