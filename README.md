@@ -44,7 +44,7 @@ Install dependencies:
 
 > [!IMPORTANT]
 > Set the environment variable `AUR_HELPER` if you use an AUR helper.
-> If it is not set or empty, the installation script will use `pacman`.
+> If it is not set or empty, the installation script will use `pacman`. This will fail for AUR packages (like Pywal16) so it is recommended that you install an AUR helper yourself.
 
 ```zsh
 git clone https://github.com/Stefan-Rankovic/dotfiles ~/dotfiles
@@ -59,10 +59,7 @@ If you want to add your own flavor to the configuration.
 ### Wallpaper
 If you want a new wallpaper, add it to ~/.config/hypr/wallpapers/.
 
-If you want to switch your wallpaper, edit ~/.config/hypr/hyprpaper.conf.
-
-> [!IMPORTANT]
-> When switching wallpapers, make sure to edit both paths inside the hyprpaper configuration file.
+If you want to switch your wallpaper, press Super+Alt+W and select your new wallpaper.
 
 ### Zsh aliases/functions/whatever
 Add to ~/.config/zsh/aliases/, ~/.config/zsh/functions, ~/.config/zsh/addons/zinit_plugins/, or wherever you feel like it fits.
@@ -75,6 +72,5 @@ Add to ~/.config/zsh/aliases/, ~/.config/zsh/functions, ~/.config/zsh/addons/zin
 ## Todo
 - Add deletion script.
 - Add rofi.
-- Add waybar.
 - Add kitty.
 
