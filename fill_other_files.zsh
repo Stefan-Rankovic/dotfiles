@@ -1,7 +1,8 @@
 #!/bin/env zsh
 # SPDX-License-Identifier: GPL-3.0-only
 
-print -P "%BFilling other files with default content %F{green}(you may want to further modify these files)%f...%b"
+print -P "%BFilling other files with default content...%b"
+print -P "%B{green}NOTE: If you are running this script for the first time, you should probably look at and modify all of these files (except if the README says otherwise, such as for hyprpaper.conf). If it is not your first time, and you are running this script to update, you should still check if there is anything new you might want to add. The changes you made to a file might not overlap with the new things added."
 did_something=0
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -16,6 +17,7 @@ files[$DOTFILES_DIR/config/.config/hypr/startup.conf]="$(cat $DOTFILES_DIR/defau
 
 files[$DOTFILES_DIR/config/.config/zsh/.zshenv]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_.zshenv)"
 
+files[$DOTFILES_DIR/config/.config/zsh/functions/wal.zsh]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_functions_wal.zsh)"
 
 
 for path contents in "${(@kv)files}"; do

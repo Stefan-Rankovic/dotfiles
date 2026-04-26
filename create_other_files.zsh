@@ -13,6 +13,7 @@ FILES=(
 
 	"config/.config/zsh/.zsh_history"
 	"config/.config/zsh/.zshenv"
+	"config/.config/zsh/functions/wal.zsh"
 )
 
 for file in "${FILES[@]}"; do

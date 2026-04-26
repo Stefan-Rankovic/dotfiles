@@ -11,4 +11,5 @@ config/.config/waybar/colors-waybar.css
 config/.config/zsh/.zcompdump*
 config/.config/zsh/.zsh_history
 config/.config/zsh/.zshenv
+config/.config/zsh/functions/wal.zsh
 
