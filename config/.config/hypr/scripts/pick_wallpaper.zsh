@@ -16,7 +16,7 @@ if [[ -z "$selected" ]]; then
 fi
 
 # Selection outside $WALLPAPERS_DIR -> exit with error
-if [[ "$selected" != *"$WALLPAPERS_DIR"* ]]; then
+if [[ "$selected" != "$WALLPAPERS_DIR"* ]]; then
 	notify-send -a "Wallpaper Picker" "Error" "Invalid wallpaper selection: not in wallpapers/ directory."
 	exit 1
 fi
