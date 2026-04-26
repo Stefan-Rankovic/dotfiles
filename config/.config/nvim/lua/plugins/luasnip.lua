@@ -5,5 +5,6 @@
 -- https://github.com/L3MON4D3/LuaSnip
 
 return {
+	enabled = false, -- I'm not even using snippets
 	"L3MON4D3/LuaSnip",
 }
