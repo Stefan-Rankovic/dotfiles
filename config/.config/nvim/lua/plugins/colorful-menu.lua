@@ -5,6 +5,7 @@
 -- https://github.com/xzbdmw/colorful-menu.nvim
 
 return {
+	enabled = false, -- Because blink already does this by default.
 	"xzbdmw/colorful-menu.nvim",
 	config = function()
 		require("colorful-menu").setup()
