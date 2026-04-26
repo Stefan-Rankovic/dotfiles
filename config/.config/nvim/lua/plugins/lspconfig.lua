@@ -32,6 +32,6 @@ return {
 
 		-- There's also hyprlang, which is in lua/hyprlang_lsp.lua
 
-		vim.lsp.set_log_level("ERROR")
+		-- vim.lsp.log.set_level("ERROR") -- I don't even know what this is used for
 	end,
 }
