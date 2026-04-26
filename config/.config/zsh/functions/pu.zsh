@@ -6,7 +6,7 @@ pu() {
 	echo "---------- Programs ----------"
 
 	echo "- Pkgfile..."
-	s pkgfile --update
+	please pkgfile --update
 
 	echo "- System..."
 	pm -Syu # System packages
@@ -28,8 +28,11 @@ pu() {
 
 	echo "---------- JavaScript ----------"
 
+	echo "- Package manager"
+	pnpm self-update
+
 	echo "- Packages"
-	command -v pnpm &> /dev/null && pnpm self-update # JavaScript packages
+	pnpm update -g
 
 
 
@@ -49,5 +52,14 @@ pu() {
 
 	echo "- Plugins"
 	ya pkg upgrade
+
+	echo "---------- Nvim ----------"
+
+
+	echo "- Plugins"
+	nvim --headless "+Lazy! sync" +qa 2>&1
+
+	echo "- Treesitter"
+	nvim --headless "+TSUpdateSync" +qa 2>&1
 }
 
