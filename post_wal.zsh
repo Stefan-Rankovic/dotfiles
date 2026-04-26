@@ -30,5 +30,3 @@ else
 	print -P "%B%F{cyan}[DONE]%f (did nothing)%b"
 fi
 
-
-
