@@ -6,4 +6,7 @@ require("hyprlang_lsp")
 require("config.lazy")
 
 -- Show the file tree.
-vim.cmd("Neotree show")
+-- Schedule is used to prevent issues with auto-session.
+vim.schedule(function()
+	vim.cmd("Neotree show")
+end)

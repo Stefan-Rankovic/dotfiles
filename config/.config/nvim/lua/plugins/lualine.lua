@@ -7,12 +7,22 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
+		"rmagatti/auto-session",
+	},
 	opts = {
 		options = {
 			-- nightfly is an alternative, but it's gray INSERT color is ugly
 			theme = "palenight",
 			-- theme = "pywal16-nvim",
+		},
+		sections = {
+			lualine_x = {
+				function()
+					return require("auto-session.lib").current_session_name(true)
+				end,
+			},
 		},
 	},
 }
