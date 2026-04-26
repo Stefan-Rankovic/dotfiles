@@ -4,6 +4,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Providers
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
 -- Searching
 vim.opt.incsearch = true -- search as characters are entered
 vim.opt.hlsearch = false -- do not highlight matches
