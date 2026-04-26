@@ -1,6 +1,8 @@
 #!/bin/env zsh
 # SPDX-License-Identifier: GPL-3.0-only
 
+echo "Installing dependencies..."
+
 if [ -n "$AUR_HELPER" ]; then
 	INSTALLER="$AUR_HELPER"
 else
