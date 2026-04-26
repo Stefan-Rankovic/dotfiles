@@ -8,13 +8,11 @@ return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
-	config = function()
-		require("lualine").setup({
-			options = {
-				-- nightfly is an alternative, but it's gray INSERT color is ugly
-				theme = "palenight",
-				-- theme = "pywal16-nvim",
-			},
-		})
-	end,
+	opts = {
+		options = {
+			-- nightfly is an alternative, but it's gray INSERT color is ugly
+			theme = "palenight",
+			-- theme = "pywal16-nvim",
+		},
+	},
 }
