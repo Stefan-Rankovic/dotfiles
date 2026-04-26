@@ -16,17 +16,19 @@ return {
 			filetypes = { "lua" },
 			settings = { Lua = { diagnostics = { globals = { "vim" } } } },
 		}
-		vim.lsp.config("rust_analyzer", {
-			settings = {
-				["rust-analyzer"] = {
-					checkOnSave = { command = "clippy" },
-				},
-			},
-		})
-
 		vim.lsp.enable("pyright")
 		vim.lsp.enable("lua_ls")
-		vim.lsp.enable("rust_analyzer")
+
+		-- Rustaceanvim already takes care of this
+		-- vim.lsp.config("rust_analyzer", {
+		-- 	settings = {
+		-- 		["rust-analyzer"] = {
+		-- 			checkOnSave = { command = "clippy" },
+		-- 		},
+		-- 	},
+		-- })
+		-- vim.lsp.enable("rust_analyzer")
+
 		-- There's also hyprlang, which is in lua/hyprlang_lsp.lua
 
 		vim.lsp.set_log_level("ERROR")

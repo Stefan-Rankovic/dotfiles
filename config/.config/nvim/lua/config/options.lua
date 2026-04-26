@@ -8,6 +8,20 @@ vim.g.maplocalleader = " "
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
+-- Rustaceanvim
+vim.g.rustaceanvim = {
+	server = {
+		settings = {
+			["rust-analyzer"] = {
+				check = {
+					command = "clippy",
+					extraArgs = { "-Zcargo-lints" },
+				},
+			},
+		},
+	},
+}
+
 -- Searching
 vim.opt.incsearch = true -- search as characters are entered
 vim.opt.hlsearch = false -- do not highlight matches
