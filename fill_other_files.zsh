@@ -34,6 +34,6 @@ done
 if [[ $did_something == 1 ]]; then
 	print -P "%B%F{cyan}[DONE]%f%b\n"
 else
-	print -P "%B%F{cyan}[DONE] (did nothing) %f%b\n"
+	print -P "%B%F{cyan}[DONE]%f%b (did nothing)\n"
 fi
 
