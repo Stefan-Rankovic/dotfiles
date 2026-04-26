@@ -3,9 +3,6 @@
 
 ./deps.zsh
 
-RESET="\e[0m"
-BLUE="\e[34m"
-MAGENTA="\e[35m"
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Repository setup
