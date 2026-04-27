@@ -31,7 +31,7 @@ Install dependencies:
 - [Stow](https://www.gnu.org/software/stow/)
 
 [^1]: You need to download Zsh manually in order to run scripts in this repository.
-[^2]: `hyprpaper` is an alternative, but it is not dynamic. Meaning you have to log out to change your wallpaper. If you for some reason want it, a config for it is bundled in this repository. If you want to delete that config, it's located at ~/.config/hypr/hyprpaper.conf.
+[^2]: `hyprpaper` is an alternative, but it is not dynamic. Meaning you have to log out to change your wallpaper. If you for some reason want it, a config for it is bundled in this repository. To use it, run `hyprpaper.zsh`.
 [^3]: It also pulls [Grim](https://gitlab.freedesktop.org/emersion/grim) as a dependency. It is not marked as a dependency on the AUR, yet (on my machine) Normcap doesn't work without it. Screenshot permission issues. Grim is only 45 KiB anyway. But I think that technically you don't need it.
 [^4]: You need to download Git manually in order to clone this repository.
 
@@ -58,8 +58,9 @@ If you want to add your own flavor to the configuration.
 
 ### Wallpaper
 If you want a new wallpaper, add it to ~/.config/hypr/wallpapers/.
+Please make sure that there are no wallpapers that start with another's name. For example, having both `wallpaper.png` and `wallpaper.png__new_version.png` and changing your wallpaper to `wallpaper.png` will confuse the script.
 
-If you want to switch your wallpaper, press Super+Alt+W and select your new wallpaper.
+To switch your wallpaper, press Super+Alt+W and select your new wallpaper.
 
 ### Zsh aliases/functions/whatever
 Add to ~/.config/zsh/aliases/, ~/.config/zsh/functions, ~/.config/zsh/addons/zinit_plugins/, or wherever you feel like it fits.

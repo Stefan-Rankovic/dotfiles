@@ -1,9 +1,8 @@
 #!/bin/env zsh
 # SPDX-License-Identifier: GPL-3.0-only
+set -eo pipefail
 
-set -euo pipefail
-
-WALLPAPERS_DIR="${HOME}/.config/hypr/wallpapers"
+WALLPAPERS_DIR="${HOME:?}/.config/hypr/wallpapers"
 SCRIPTS_DIR="${0:A:h}"
 
 selected=$(yazi --chooser-file=/dev/stdout "$WALLPAPERS_DIR")

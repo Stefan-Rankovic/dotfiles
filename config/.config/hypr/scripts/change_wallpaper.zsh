@@ -1,8 +1,8 @@
 #!/bin/env zsh
 # SPDX-License-Identifier: GPL-3.0-only
+set -eo pipefail
 
-WALLPAPERS_DIR="${HOME}/.config/hypr/wallpapers"
-HYPRPAPER_CONF="${HOME}/.config/hypr/hyprpaper.conf"
+WALLPAPERS_DIR="${HOME:?}/.config/hypr/wallpapers"
 
 if [[ -z "$1" ]]; then
     echo "Usage: $0 <path or filename>" >&2
@@ -40,6 +40,7 @@ echo "Changing wallpaper"
 if command -v awww &>/dev/null; then
 	awww img "$IMG_PATH"
 elif command -v hyprpaper &>/dev/null; then
+	HYPRPAPER_CONF="${HOME}/.config/hypr/hyprpaper.conf"
 	cat > "$HYPRPAPER_CONF" <<EOF
 # SPDX-License-Identifier: GPL-3.0-only
 # NOTE: This file is automatically managed by \`scripts/change_wallpaper.zsh\`! Please use that to change your wallpaper.
@@ -55,7 +56,7 @@ splash = false
 EOF
 fi
 
-echo "Sourcing wal function from $ZDOTDIR/functions/wal.zsh"
+echo "Sourcing wal function from ${ZDOTDIR:?}/functions/wal.zsh"
 source "$ZDOTDIR/functions/wal.zsh"
 wal -n -i "$IMG_PATH"
 
