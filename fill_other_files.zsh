@@ -15,9 +15,9 @@ files[$DOTFILES_DIR/config/.config/hypr/hyprpaper.conf]="$(cat $DOTFILES_DIR/def
 files[$DOTFILES_DIR/config/.config/hypr/startup.conf]="$(cat $DOTFILES_DIR/default_file_contents/config_config_hypr_startup.conf)"
 
 
-files[$DOTFILES_DIR/config/.config/zsh/.zshenv]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_.zshenv)"
-
 files[$DOTFILES_DIR/config/.config/zsh/functions/wal.zsh]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_functions_wal.zsh)"
+
+files[$DOTFILES_DIR/config/.config/zsh/personal.zshenv]="$(cat $DOTFILES_DIR/default_file_contents/config_config_zsh_personal.zshenv)"
 
 
 for path contents in "${(@kv)files}"; do

@@ -12,8 +12,8 @@ FILES=(
 	"config/.config/hypr/startup.conf"
 
 	"config/.config/zsh/.zsh_history"
-	"config/.config/zsh/.zshenv"
 	"config/.config/zsh/functions/wal.zsh"
+	"config/.config/zsh/personal.zshenv"
 )
 
 for file in "${FILES[@]}"; do
