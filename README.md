@@ -1,5 +1,9 @@
 # Dotfiles
 
+> [!CAUTION]
+> This repository has been archived.
+> I now use NixOS and see no need in maintaining this.
+
 ## Description
 Configuration for [Arch Linux](https://archlinux.org/).
 
