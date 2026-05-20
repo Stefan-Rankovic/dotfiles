@@ -3,6 +3,9 @@
 # See `man zshoptions` for documentation on these.
 
 setopt AUTO_CD
+setopt HIST_IGNORE_SPACE
 setopt CORRECT
 setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY_TIME
+setopt INTERACTIVE_COMMENTS
+

@@ -5,7 +5,6 @@
 export TERMINAL="kitty"
 export FILE_EXPLORER="yazi"
 export BROWSER="firefox"
-export AUR_HELPER="paru"
 export EDITOR="nvim"
 
 # XDG

@@ -3,7 +3,6 @@
 config/.config/hypr/hyprpaper.conf
 config/.config/hypr/startup.conf
 
-config/.config/nvim/.neoconf.json
 config/.config/nvim/lazy-lock.json
 
 config/.config/waybar/colors-waybar.css
